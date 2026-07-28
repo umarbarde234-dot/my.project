@@ -1,0 +1,34 @@
+body { background: #000; height: 100vh; margin: 0; }
+.scene { 
+  position: relative; 
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; /* stacks moon + text vertically */
+}
+
+.moon {
+  width: 100px;
+  height: 100px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  box-shadow: inset -15px -10px 0 #ccc;
+  animation: rotate 20s linear infinite;
+  margin-bottom: 30px; /* space between moon and text */
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite;
+}
+.s1 { top: 40%; left: 45%; animation-delay: 0s; }
+.s2 { top: 55%; left: 55%; animation-delay: 0.5s; }
+.s3 { top: 45%; left: 60%; animation-delay: 1s; }
+
+.love-text
